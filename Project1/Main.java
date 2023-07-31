@@ -21,8 +21,12 @@ public class Main {
                 boolean played=false;
                 if(count%2==0){
                    System.out.println("\nWere would you like to play? (1-9)");
+                    //try for num != int
+                    //try for num < 1 | num > 9
                    int num =input.nextInt();
                    checkInput(num);
+                    
+                   //try for index is not empty
                    boolean isEmpty=add(tictactoe,getIndex(num),'X');
                    checkIndex(isEmpty, 'X');
                    played=true;
@@ -35,6 +39,8 @@ public class Main {
                 }
                 else{
                     int num2=(int)(Math.random() * (9 - 1 + 1) + 1);
+                    //try for index is not empty
+
                     boolean isEmpty=add(tictactoe,getIndex(num2),'O');
                     checkIndex(isEmpty,'O');
 
