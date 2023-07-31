@@ -40,7 +40,7 @@ public class Main {
                     System.out.println(results.get(results.size() - 1));
 
                 }
-                else if (optNum == 9) {
+                else if (optNum == 10) {
                     //try for Arraylist != empty
                     checkSize(results.size());
                     for (int n : results)
