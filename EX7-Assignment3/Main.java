@@ -2,7 +2,6 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-
 public class Main {
     public static void main(String[] args) {
         //Q7.Write a menu driven Java program with following option:
