@@ -10,8 +10,8 @@ public class Main {
         System.out.println("Please enter the size of the array ");
         int[] numbers=null;
         try {
-            //try for input != int**
-            //try for size > 0**
+            //try for input != int
+            //try for size < 0
             int size = input.nextInt();
             input.nextLine();
             checkSize(size);
@@ -21,15 +21,15 @@ public class Main {
             int count = 0;
             do {
                 System.out.println("\nPlease choose one of the options \n1.Accept elements of an array \n2.Display elements of an array \n3.Search the element within array \n4.Sort the array\n5.To Stop");
-                //try for input != int**
-                //try for answer >= 1 & <= 5**
+                //try for input != int
+                //try for answer < 1 | answer > 5
                 answer = input.nextInt();
                 input.nextLine();
                 checkAnswer(answer);
 
                 switch (answer) {
                     case 1:
-                        //try for checking if the size of the array is full
+                        //try for the array is full
                         isFull(count,numbers);
                         System.out.println("\nPlease enter a number ");
                         numbers[count] = input.nextInt();
@@ -37,7 +37,7 @@ public class Main {
                         count++;
                         break;
                     case 2:
-                        //try for array is not empty
+                        //try for array is empty
                         isEmpty(count);
                         System.out.print("\nThe elements of the array are ");
                         for (int i = 0; i < count; i++)
@@ -67,7 +67,7 @@ public class Main {
                         }
                         break;
                     case 4:
-                        //try for array is not empty
+                        //try for array is empty
                         isEmpty(count);
                         int temp = 0;
                         for (int i = 0; i < count; i++) {
