@@ -2,6 +2,9 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.ArrayList;
 
+//Bashaer Alhuthli
+//Java Bootcamp
+
 public class Main {
     public static void main(String[] args) {
         //Q7.Write a menu driven Java program with following option:
@@ -45,7 +48,7 @@ public class Main {
                     case 3:
                         boolean isFound = false;
                         ArrayList<Integer> indexes = new ArrayList<Integer>();
-                        //try for array is not empty
+                        //try for array is empty
                         isEmpty(count);
                         System.out.print("\nPlease enter a number ");
                         int number = input.nextInt();
@@ -57,7 +60,7 @@ public class Main {
                             }
                         }
                         if (isFound) {
-                            System.out.print(number + " is found at index ");
+                            System.out.print(number + " is found at the index ");
                             for (int i : indexes) {
                                 System.out.print(i + ", ");
                             }
@@ -112,11 +115,11 @@ public class Main {
     }
     public static void isFull(int count, int[] num) throws Exception{
         if (count == num.length)
-            throw new Exception("\nCan't add an element, the size of the array is full ");
+            throw new Exception("\nCan't add an element, the array is full ");
     }
     public static void isEmpty(int count) throws Exception{
         if (count == 0)
-            throw new Exception("\nThere are no elements in the array ");
+            throw new Exception("\nThe array is empty ");
     }
 
 }
