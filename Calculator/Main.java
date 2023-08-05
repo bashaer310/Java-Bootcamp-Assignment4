@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+//Bashaer Alhuthli
+//Java Bootcamp
 public class Main {
     static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
@@ -99,12 +101,12 @@ public class Main {
 
         }
         results.add(result);
-        System.out.println("\nThe result of operation "+result);
+        System.out.println("\nThe result of the operation is "+result);
     }
 
     public static void checkInput(int num) throws Exception{
         if(num<1 | num >10)
-            throw new Exception("\nThe option number should between 1 and 10");
+            throw new Exception("\nThe option number should be between 1 and 10");
 
     }
     public static void checkSize(int num) throws Exception{
