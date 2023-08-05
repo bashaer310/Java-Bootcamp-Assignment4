@@ -66,7 +66,7 @@ public class Main {
 
 
         if(count==9 & finished==false)
-            System.out.println("\nNo one wins ");
+            System.out.println("\nNo one won ");
 
     }
 
@@ -140,12 +140,12 @@ public class Main {
 
     public static void checkInput(int num) throws Exception{
         if(num<1 | num >9)
-            throw new Exception("The Number should between 1 and 9");
+            throw new Exception("The number should be between 1 and 9");
 
     }
     public static void checkIndex(boolean isEmpty, char XO) throws Exception{
         if(!isEmpty)
-            throw new Exception("\nPlayer "+XO+", index of number is not empty ");
+            throw new Exception("\nPlayer "+XO+", the index has an element ");
     }
 
 }
